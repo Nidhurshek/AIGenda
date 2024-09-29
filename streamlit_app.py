@@ -24,13 +24,13 @@ def input_image_details(uploaded_file):
     else:
         raise FileNotFoundError("file not uploaded")
     
-st.set_page_config(page_title="GenAI Invoice Reader")
-st.sidebar.header("SmartScan BillBot")
-st.sidebar.write("Made by NIDHURSHEK")
+st.set_page_config(page_title="GenAI Future Scan")
+st.sidebar.header("SmartScan AI Bot")
+st.sidebar.write("Made by Nidhurshek")
 st.sidebar.write("Powered by Google Gemini AI")
-st.header("SmartScan BillBot")
-st.subheader("Made by NIDHURSHEK")
-st.subheader("Manage your expenses with SmartScan BillBot")
+st.header("SmartScan AI Bot")
+st.subheader("Made by Nidhurshek")
+st.subheader("Ask anything to SmartScan AI Bot")
 input = st.text_input("What do you want the AI to do ?",key="input")
 uploaded_file = st.file_uploader("Choose an Image",type=["jpg","jpeg","png"])
 image = ""
@@ -41,9 +41,10 @@ if uploaded_file is not None:
 ssubmit = st.button("Lets Go")
 
 input_prompt = """
-You are an exper in reading invoices. We are going to upload an image of an invoice and you will have to
-answer any type of questions asked by the user. Always greet user. Always keep fonts uniform
-At the end,make sure to repeat the name of our app "SmartScan BillBot" ans ask user to use it again
+You are an expert in reading images. We are going to upload an image and you will have to
+answer any type of questions asked by the user. Always greet the user first. Always keep fonts uniform
+At the end,make sure to repeat the name of our app "SmartScan BillBot" ans ask user to use it again. Provide accurate information
+to the user. Dynamically change colours to attract users.
 """
 
 
