@@ -32,7 +32,7 @@ st.sidebar.write("Made by Nidhurshek")
 st.header("SmartScan AI Bot")
 st.subheader("Made by Nidhurshek")
 st.subheader("Ask anything to SmartScan AI Bot")
-input = st.text_input("What do you want the AI to do ?",key="input")
+input = st.text_input("Hi this is SmartScanAI_Bot at Service, What can I do for you ?",key="input")
 uploaded_file = st.file_uploader("Choose an Image",type=["jpg","jpeg","png"])
 image = ""
 if uploaded_file is not None:
