@@ -26,9 +26,9 @@ def input_image_details(uploaded_file):
     
 st.set_page_config(page_title="GenAI Future Scan")
 st.sidebar.header("SmartScan AI Bot")
-st.sidebar.write("Made by Nidhurshek")
 st.sidebar.write("This AI Bot prioritizes User-Centric Design, ensuring intuitive navigation while delivering Real-Time Insights to empower users in making informed decisions.")
 st.sidebar.write("Powered by Google Gemini AI")
+st.sidebar.write("Made by Nidhurshek")
 st.header("SmartScan AI Bot")
 st.subheader("Made by Nidhurshek")
 st.subheader("Ask anything to SmartScan AI Bot")
